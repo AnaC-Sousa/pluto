@@ -25,7 +25,7 @@ namespace pluto.rover.api
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddControllers();
-      services.AddSingleton<IRoverOrders, RoverOrders>();
+      services.AddScoped<IRoverOrders, RoverOrders>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
