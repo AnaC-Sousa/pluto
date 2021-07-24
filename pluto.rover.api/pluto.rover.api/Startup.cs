@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using pluto.rover.api.Orders;
 
 namespace pluto.rover.api
 {
@@ -20,6 +21,7 @@ namespace pluto.rover.api
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddControllers();
+      services.AddSingleton<IRoverOrders, RoverOrders>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

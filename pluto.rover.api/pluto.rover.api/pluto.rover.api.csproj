@@ -6,9 +6,17 @@
 
 
   <ItemGroup>
-    <None Remove="Entities\" />
+    <None Remove="Orders\" />
+    <None Remove="Pluto\" />
+    <None Remove="MovesValidator\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <Folder Include="Orders\" />
+    <Folder Include="MovesValidator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pluto.rover.entities\pluto.rover.domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

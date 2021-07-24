@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Operations\" />
+    <None Remove="Planet\" />
+    <None Remove="Navigation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Operations\" />
+    <Folder Include="Planet\" />
+    <Folder Include="Navigation\" />
+  </ItemGroup>
+</Project>

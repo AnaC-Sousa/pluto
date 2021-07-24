@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pluto.rover.api", "pluto.ro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pluto.rover.api.tests", "pluto.rover.api.tests\pluto.rover.api.tests.csproj", "{2F769228-3804-4D46-A3CA-9287A4031747}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pluto.rover.domain", "pluto.rover.entities\pluto.rover.domain.csproj", "{B40B0754-30BC-4B89-A8CE-D2E5CE8834AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2F769228-3804-4D46-A3CA-9287A4031747}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F769228-3804-4D46-A3CA-9287A4031747}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F769228-3804-4D46-A3CA-9287A4031747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40B0754-30BC-4B89-A8CE-D2E5CE8834AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40B0754-30BC-4B89-A8CE-D2E5CE8834AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40B0754-30BC-4B89-A8CE-D2E5CE8834AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40B0754-30BC-4B89-A8CE-D2E5CE8834AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
