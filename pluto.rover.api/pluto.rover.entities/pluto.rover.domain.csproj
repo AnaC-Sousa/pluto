@@ -8,10 +8,12 @@
     <None Remove="Operations\" />
     <None Remove="Planet\" />
     <None Remove="Navigation\" />
+    <None Remove="Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Operations\" />
     <Folder Include="Planet\" />
     <Folder Include="Navigation\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
 </Project>

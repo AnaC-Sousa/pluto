@@ -20,11 +20,6 @@ namespace pluto.rover.domain
       return RoverOperations.Coordinates.Y;
     }
 
-    public override string ToString()
-    {
-      return RoverOperations.ToString();
-    }
-
     public Rover GoBack()
     {
       RoverOperations = RoverOperations.GoBack();
@@ -47,6 +42,11 @@ namespace pluto.rover.domain
     {
       RoverOperations = RoverOperations.TurnRight();
       return this;
+    }
+
+    public override string ToString()
+    {
+      return RoverOperations.ToString();
     }
 
     public static Rover DefaultRover()

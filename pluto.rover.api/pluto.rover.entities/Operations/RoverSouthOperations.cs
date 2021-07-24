@@ -16,7 +16,11 @@
         yPosition = 0;
       }
 
-      Coordinates = new Point(Coordinates.X, yPosition);
+      Point newPosition = new Point(Coordinates.X, yPosition);
+
+      ValidateObstacle(newPosition);
+
+      Coordinates = newPosition;
       return this;
     }
 
@@ -29,7 +33,11 @@
         yPosition = Planet.GetGrid().Height-1;
       }
 
-      Coordinates = new Point(Coordinates.X, yPosition);
+      Point newPosition = new Point(Coordinates.X, yPosition);
+
+      ValidateObstacle(newPosition);
+
+      Coordinates = newPosition;
       return this;
     }
 

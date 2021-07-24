@@ -1,3 +1,5 @@
+using pluto.rover.domain.Exceptions;
+
 namespace pluto.rover.domain.Operations
 {
   public class RoverNorthOperations : RoverOperations
@@ -16,7 +18,11 @@ namespace pluto.rover.domain.Operations
         yPosition = Planet.GetGrid().Height-1;
       }
 
-      Coordinates = new Point(Coordinates.X, yPosition);
+      Point newPosition = new Point(Coordinates.X, yPosition);
+
+      ValidateObstacle(newPosition);
+
+      Coordinates = newPosition;
       return this;
     }
 
@@ -29,7 +35,11 @@ namespace pluto.rover.domain.Operations
         yPosition = 0;
       }
 
-      Coordinates = new Point(Coordinates.X, yPosition);
+      Point newPosition = new Point(Coordinates.X, yPosition);
+
+      ValidateObstacle(newPosition);
+
+      Coordinates = newPosition;
       return this;
     }
 

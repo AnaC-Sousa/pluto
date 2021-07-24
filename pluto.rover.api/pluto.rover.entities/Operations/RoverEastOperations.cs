@@ -16,7 +16,12 @@ namespace pluto.rover.domain.Operations
         xPosition = Planet.GetGrid().Height-1;
       }
 
-      Coordinates = new Point(xPosition, Coordinates.Y);
+      Point newPosition = new Point(xPosition, Coordinates.Y);
+
+      ValidateObstacle(newPosition);
+
+      Coordinates = newPosition;
+
       return this;
     }
 
@@ -29,7 +34,11 @@ namespace pluto.rover.domain.Operations
         xPosition = 0;
       }
 
-      Coordinates = new Point(xPosition, Coordinates.Y);
+      Point newPosition = new Point(xPosition, Coordinates.Y);
+
+      ValidateObstacle(newPosition);
+
+      Coordinates = newPosition;
       return this;
     }
 

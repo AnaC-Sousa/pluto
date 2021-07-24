@@ -1,4 +1,6 @@
-﻿namespace pluto.rover.domain
+﻿using System;
+
+namespace pluto.rover.domain
 {
     public class Point
     {
@@ -16,9 +18,23 @@
         return new Point(0, 0);
       }
 
-      public override string ToString()
+    public override bool Equals(object obj)
+    {
+      return obj is Point point &&
+             X == point.X &&
+             Y == point.Y;
+    }
+
+    public override int GetHashCode()
+    {
+      return HashCode.Combine(X, Y);
+    }
+
+    public override string ToString()
       {
         return $@"{X},{Y}";
       }
+
+      
     }
 }

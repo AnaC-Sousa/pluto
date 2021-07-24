@@ -1,3 +1,5 @@
+using pluto.rover.domain.Exceptions;
+
 namespace pluto.rover.domain.Operations
 {
   public abstract class RoverOperations
@@ -17,6 +19,13 @@ namespace pluto.rover.domain.Operations
     public abstract RoverOperations TurnRight();
     public abstract string GetDirection();
 
+    public void ValidateObstacle(Point newPosition)
+    {
+      if (Planet.GetObstacles().Contains(newPosition))
+      {
+        throw new FoundObstacleException(this);
+      }
+    }
 
     public override string ToString()
     {
